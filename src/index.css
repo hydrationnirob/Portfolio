@@ -1,0 +1,39 @@
+/* src/index.css */
+.portfolio_card {
+    background-color: #0071e3; /* গা dark ় রঙ */
+    color: white; /* টেক্সটের রঙ সাদা */
+    border: none; /* কার্ডের বর্ডার সরান */
+}
+
+.portfolio_card img {
+    height: 200px; /* ছবির উচ্চতা নির্ধারণ করুন */
+    object-fit: cover; /* ছবির আকার একই রাখতে */
+}
+
+.author-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  
+  .blog-details p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  h1.display-5 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  i {
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  i:hover {
+    color: #0056b3;
+  }
+  

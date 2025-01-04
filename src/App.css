@@ -1,0 +1,190 @@
+body, main{
+  background-color: black;
+  color: #fff;
+}
+
+
+/* Banner style start */
+.banner_block {
+  min-height: 100vh;
+  position: relative;
+  background-color: rgb(0, 0, 0);
+
+}
+
+.bannerImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mask-image: linear-gradient(180deg, white, transparent);
+}
+
+.banner_info {
+  /* background:radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 70%); */
+  width: 50%;
+  height: 100%;
+  position: absolute; 
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+.banner_desc{
+  width: 90%;
+  text-align: justify;
+  color: gainsboro;
+}
+.info {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 10;
+}
+
+.bottom_info {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+
+}
+
+@media only screen and (max-width: 1440px) {
+  .info {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner_block {
+    height: max-content;
+    overflow-x: hidden;
+  }
+  .banner_info {
+    width: 100%;
+  }
+  .banner_desc{
+    display: none;
+  }
+  .bannerImg {
+    height: 400px;
+    width: 135%;
+    object-position: right;
+  }
+  .info {
+    height: 200px;
+  }
+
+  .bottom_info {
+    height: max-content;
+  }
+}
+
+/* Banner style end */
+
+/* About Style start */
+.about_profile_Pic {
+  max-width: 400px;
+  width: 200px;
+  max-height: 400px;
+  object-fit: cover;
+  padding: 10px;
+  margin: auto;
+  display: block;
+  border-radius: 20px !important;
+}
+
+.social_link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.social_link a {
+  width: 25px;
+  height: 25px;
+  font-size: 27px;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+.social_link img {
+  width: 100%;
+  height: 100%;
+}
+
+/* About Style end */
+/* Resume  Style start */
+.side_stick {
+  border-left: 2px solid blue;
+  padding: 0 0 1px 10px;
+  position: relative;
+}
+
+.side_stick::before {
+  content: 'o';
+  position: absolute;
+  top: -32px;
+  left: -9px;
+  font-size: 29px;
+  color: blue;
+}
+
+.progress-bar {
+  padding: 5px !important;
+  background: linear-gradient(90deg, blue, red);
+}
+
+/*  Resume Style end */
+
+/*  Service Style start */
+.service_card {
+  background-color: rgb(233, 255, 255);
+  color: #000;
+  border-radius: 1px;
+  width: 20rem;
+  height: 12rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.service_card .card-footer {
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  color: rgb(73, 0, 156);
+}
+
+.service_card:hover {
+  background: linear-gradient(180deg, rgb(60, 177, 255), rgb(9, 24, 8));
+  color: lightcyan;
+}
+
+.service_card:hover .card-footer {
+  color: rgb(255, 148, 148);
+
+}
+
+/*  Service Style end */
+.portfolio_card{
+  background-color: rgb(232, 230, 250); 
+}
+ .portfolio_card a.link{
+  /* w-25 d-inline-block border text-center rounded */
+  display: inline-block;
+  border: gray 1px solid;
+  border-radius: 5px;
+  padding: 0 5px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  width: 25%;
+ }
+ .portfolio_card a.link:hover{
+border-color: blue;
+  color: blue;
+ }
