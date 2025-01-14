@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Navx from './components/Nav';
 import Portfolio from "./components/bodycomponents/Portfolio";
 import PortfolioDetail from "./components/portfoliodetils/PortfolioDetail";
+import AppListing from "./components/bodycomponents/AppListing";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Body />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolio/:id" element={<PortfolioDetail />} />
+          <Route path="/apps" element={<AppListing />} />
         </Routes>
 
         {/* Footer component */}
